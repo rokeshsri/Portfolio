@@ -1,7 +1,10 @@
-// ================= MOBILE MENU =================
+/* =====================================================
+   MOBILE MENU
+===================================================== */
 
 const menuIcon = document.querySelector(".menu-icon");
 const navbar = document.querySelector(".navbar");
+
 
 if (menuIcon) {
 
@@ -14,9 +17,14 @@ if (menuIcon) {
 }
 
 
-// Close mobile menu after clicking a link
+/* =====================================================
+   CLOSE MOBILE MENU AFTER CLICK
+===================================================== */
 
-document.querySelectorAll(".navbar a").forEach(link => {
+const navLinks = document.querySelectorAll(".navbar a");
+
+
+navLinks.forEach(link => {
 
     link.addEventListener("click", () => {
 
@@ -27,114 +35,12 @@ document.querySelectorAll(".navbar a").forEach(link => {
 });
 
 
-// ================= TYPING ANIMATION =================
 
-const typingText = document.getElementById("typing-text");
+/* =====================================================
+   ACTIVE NAVBAR
+===================================================== */
 
-const roles = [
-    "AI & Data Science Student",
-    "Aspiring Data Analyst",
-    "Python Enthusiast",
-    "Machine Learning Learner",
-    "AI Project Builder"
-];
-
-let roleIndex = 0;
-let charIndex = 0;
-let deleting = false;
-
-
-function typeEffect() {
-
-    const currentRole = roles[roleIndex];
-
-    if (!deleting) {
-
-        typingText.textContent =
-            currentRole.substring(0, charIndex + 1);
-
-        charIndex++;
-
-        if (charIndex === currentRole.length) {
-
-            deleting = true;
-
-            setTimeout(typeEffect, 1800);
-
-            return;
-
-        }
-
-    } else {
-
-        typingText.textContent =
-            currentRole.substring(0, charIndex - 1);
-
-        charIndex--;
-
-        if (charIndex === 0) {
-
-            deleting = false;
-
-            roleIndex =
-                (roleIndex + 1) % roles.length;
-
-        }
-
-    }
-
-    setTimeout(
-        typeEffect,
-        deleting ? 45 : 80
-    );
-}
-
-typeEffect();
-
-
-// ================= SCROLL REVEAL =================
-
-const revealElements =
-    document.querySelectorAll(".reveal");
-
-
-const revealObserver =
-    new IntersectionObserver(
-        (entries, observer) => {
-
-            entries.forEach(entry => {
-
-                if (entry.isIntersecting) {
-
-                    entry.target.classList.add("show");
-
-                    observer.unobserve(entry.target);
-
-                }
-
-            });
-
-        },
-        {
-            threshold: 0.12
-        }
-    );
-
-
-revealElements.forEach(element => {
-
-    revealObserver.observe(element);
-
-});
-
-
-// ================= ACTIVE NAVBAR =================
-
-const sections =
-    document.querySelectorAll("section");
-
-const navLinks =
-    document.querySelectorAll(".navbar a");
+const sections = document.querySelectorAll("section");
 
 
 window.addEventListener("scroll", () => {
@@ -149,10 +55,14 @@ window.addEventListener("scroll", () => {
         const sectionHeight =
             section.clientHeight;
 
+
         if (
+
             window.scrollY >= sectionTop &&
+
             window.scrollY <
             sectionTop + sectionHeight
+
         ) {
 
             current =
@@ -167,9 +77,12 @@ window.addEventListener("scroll", () => {
 
         link.classList.remove("active");
 
+
         if (
+
             link.getAttribute("href") ===
             "#" + current
+
         ) {
 
             link.classList.add("active");
@@ -181,190 +94,308 @@ window.addEventListener("scroll", () => {
 });
 
 
-// ================= CURSOR GLOW =================
+
+/* =====================================================
+   AI MOUSE FOLLOW EFFECT
+===================================================== */
 
 const cursorGlow =
     document.querySelector(".cursor-glow");
 
+const cursorDot =
+    document.querySelector(".cursor-dot");
+
 
 document.addEventListener("mousemove", (event) => {
 
-    cursorGlow.style.left =
-        event.clientX + "px";
+    if (cursorGlow) {
 
-    cursorGlow.style.top =
-        event.clientY + "px";
+        cursorGlow.style.left =
+            event.clientX + "px";
+
+        cursorGlow.style.top =
+            event.clientY + "px";
+
+    }
+
+
+    if (cursorDot) {
+
+        cursorDot.style.left =
+            event.clientX + "px";
+
+        cursorDot.style.top =
+            event.clientY + "px";
+
+    }
 
 });
 
 
-// ================= ANIMATED COUNTERS =================
 
-const counters =
-    document.querySelectorAll(".counter");
+/* =====================================================
+   TYPING ANIMATION
+===================================================== */
+
+const roles = [
+
+    "AI & Data Science Student",
+
+    "Aspiring Data Analyst",
+
+    "Python Enthusiast",
+
+    "Machine Learning Explorer",
+
+    "AI Solution Builder"
+
+];
 
 
-let countersStarted = false;
+let roleIndex = 0;
+
+let charIndex = 0;
+
+let deleting = false;
 
 
-function startCounters() {
+const typingText =
+    document.querySelector(".typing-text");
 
-    if (countersStarted) return;
 
-    countersStarted = true;
+function typeEffect() {
 
-    counters.forEach(counter => {
+    if (!typingText) {
 
-        const target =
-            parseFloat(
-                counter.dataset.target
+        return;
+
+    }
+
+
+    const currentRole =
+        roles[roleIndex];
+
+
+    if (!deleting) {
+
+        typingText.textContent =
+            currentRole.substring(
+                0,
+                charIndex + 1
             );
 
-        let current = 0;
 
-        const increment =
-            target / 80;
+        charIndex++;
 
 
-        const updateCounter = () => {
+        if (
+            charIndex ===
+            currentRole.length
+        ) {
 
-            current += increment;
+            deleting = true;
 
-            if (current < target) {
+            setTimeout(
+                typeEffect,
+                1600
+            );
 
-                if (target % 1 !== 0) {
+            return;
 
-                    counter.textContent =
-                        current.toFixed(2);
+        }
 
-                } else {
+    }
 
-                    counter.textContent =
-                        Math.floor(current) + "+";
+    else {
 
-                }
+        typingText.textContent =
+            currentRole.substring(
+                0,
+                charIndex - 1
+            );
 
-                requestAnimationFrame(
-                    updateCounter
-                );
 
-            } else {
+        charIndex--;
 
-                if (target % 1 !== 0) {
 
-                    counter.textContent =
-                        target.toFixed(2);
+        if (charIndex === 0) {
 
-                } else {
+            deleting = false;
 
-                    counter.textContent =
-                        target + "+";
+            roleIndex =
+                (roleIndex + 1)
+                % roles.length;
 
-                }
+        }
 
-            }
+    }
 
-        };
 
-        updateCounter();
+    setTimeout(
 
-    });
+        typeEffect,
+
+        deleting ? 45 : 85
+
+    );
 
 }
 
 
-// Counter observer
-
-const statsSection =
-    document.querySelector(".stats-section");
+typeEffect();
 
 
-const counterObserver =
-    new IntersectionObserver(
-        entries => {
 
-            if (entries[0].isIntersecting) {
+/* =====================================================
+   SCROLL REVEAL ANIMATION
+===================================================== */
 
-                startCounters();
+const revealElements =
+    document.querySelectorAll(".reveal");
 
-            }
 
-        },
-        {
-            threshold: 0.3
+const revealOnScroll = () => {
+
+    const windowHeight =
+        window.innerHeight;
+
+
+    revealElements.forEach(element => {
+
+        const elementTop =
+            element.getBoundingClientRect().top;
+
+
+        if (
+            elementTop <
+            windowHeight - 80
+        ) {
+
+            element.classList.add("active");
+
+        }
+
+    });
+
+};
+
+
+window.addEventListener(
+    "scroll",
+    revealOnScroll
+);
+
+
+window.addEventListener(
+    "load",
+    revealOnScroll
+);
+
+
+
+/* =====================================================
+   PROJECT IMAGE TILT EFFECT
+===================================================== */
+
+const projectCards =
+    document.querySelectorAll(".project-card");
+
+
+projectCards.forEach(card => {
+
+    card.addEventListener(
+        "mousemove",
+        (event) => {
+
+            const rect =
+                card.getBoundingClientRect();
+
+
+            const x =
+                event.clientX - rect.left;
+
+
+            const y =
+                event.clientY - rect.top;
+
+
+            const centerX =
+                rect.width / 2;
+
+
+            const centerY =
+                rect.height / 2;
+
+
+            const rotateX =
+                ((y - centerY) /
+                centerY) * -2;
+
+
+            const rotateY =
+                ((x - centerX) /
+                centerX) * 2;
+
+
+            card.style.transform =
+                `perspective(1000px)
+                 rotateX(${rotateX}deg)
+                 rotateY(${rotateY}deg)
+                 translateY(-8px)`;
+
         }
     );
 
 
-if (statsSection) {
+    card.addEventListener(
+        "mouseleave",
+        () => {
 
-    counterObserver.observe(
-        statsSection
+            card.style.transform =
+                "";
+
+        }
     );
-
-}
-
-
-// ================= 3D PROJECT CARD =================
-
-const tiltCards =
-    document.querySelectorAll(".tilt-card");
-
-
-tiltCards.forEach(card => {
-
-    card.addEventListener("mousemove", event => {
-
-        const rect =
-            card.getBoundingClientRect();
-
-        const x =
-            event.clientX - rect.left;
-
-        const y =
-            event.clientY - rect.top;
-
-
-        const centerX =
-            rect.width / 2;
-
-        const centerY =
-            rect.height / 2;
-
-
-        const rotateX =
-            ((y - centerY) / centerY) * -3;
-
-        const rotateY =
-            ((x - centerX) / centerX) * 3;
-
-
-        card.style.transform =
-            `perspective(1000px)
-             rotateX(${rotateX}deg)
-             rotateY(${rotateY}deg)
-             translateY(-6px)`;
-
-    });
-
-
-    card.addEventListener("mouseleave", () => {
-
-        card.style.transform =
-            "perspective(1000px) rotateX(0) rotateY(0) translateY(0)";
-
-    });
 
 });
 
 
-// ================= CONSOLE MESSAGE =================
 
-console.log(
-    "%c Welcome to RokeshSri's AI Portfolio 🚀 ",
-    "color:#4de8ff;font-size:16px;font-weight:bold;"
-);
+/* =====================================================
+   BUTTON RIPPLE EFFECT
+===================================================== */
 
-console.log(
-    "Built with HTML, CSS, JavaScript & AI-inspired animations."
-);
+const buttons =
+    document.querySelectorAll(
+        ".btn, .contact-btn"
+    );
+
+
+buttons.forEach(button => {
+
+    button.addEventListener(
+        "click",
+        function(event) {
+
+            const ripple =
+                document.createElement("span");
+
+
+            ripple.classList.add(
+                "ripple"
+            );
+
+
+            this.appendChild(ripple);
+
+
+            setTimeout(() => {
+
+                ripple.remove();
+
+            }, 600);
+
+        }
+    );
+
+});
