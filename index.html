@@ -2,874 +2,1220 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+          content="RokeshSri P - AI and Data Science Student Portfolio">
+
     <title>RokeshSri P | AI & Data Science</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+          rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-    <!-- AI BACKGROUND -->
-    <div class="ai-grid"></div>
-    <div class="cursor-glow"></div>
+<!-- =====================================================
+     AI BACKGROUND
+===================================================== -->
 
-    <!-- ================= NAVBAR ================= -->
+<div class="ai-background">
 
-    <header class="header">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
 
-        <a href="#home" class="logo">
-            RokeshSri<span>.</span>
-        </a>
-
-        <nav class="navbar">
-
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#achievements">Achievements</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-
-        </nav>
-
-        <div class="menu-icon">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-
-    </header>
+</div>
 
 
-    <!-- ================= HOME ================= -->
+<!-- =====================================================
+     MOUSE AI EFFECT
+===================================================== -->
 
-    <section class="home" id="home">
+<div class="cursor-glow"></div>
 
-        <div class="home-content reveal">
-
-            <p class="small-text">
-                HELLO, I'M
-            </p>
-
-            <h1>
-                ROKESHSRI <span>P</span>
-            </h1>
-
-            <h2>
-                <span id="typing-text"></span>
-                <span class="typing-cursor">|</span>
-            </h2>
-
-            <p class="home-description">
-                Final-year B.Tech Artificial Intelligence & Data Science student
-                passionate about Python, Data Analytics, Machine Learning and
-                building practical AI-powered solutions.
-            </p>
-
-            <div class="home-buttons">
-
-                <a href="#projects" class="btn">
-                    View My Projects
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-                <a href="RokeshSri_Resume.pdf"
-                    download
-                    class="btn secondary-btn">
-
-                    Download Resume
-                    <i class="fa-solid fa-download"></i>
-
-                </a>
-
-            </div>
+<div class="cursor-dot"></div>
 
 
-            <!-- SOCIAL LINKS -->
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
 
-            <div class="social-links">
+<header class="header">
 
-                <a href="https://github.com/rokeshsri"
-                    target="_blank"
-                    title="GitHub">
-
-                    <i class="fa-brands fa-github"></i>
-
-                </a>
-
-                <a href="https://www.linkedin.com/in/rokeshsri-palanivel-3284672b8/"
-                    target="_blank"
-                    title="LinkedIn">
-
-                    <i class="fa-brands fa-linkedin"></i>
-
-                </a>
-
-                <a href="mailto:rokeshsri94@gmail.com"
-                    title="Email">
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                </a>
-
-            </div>
-
-        </div>
+    <a href="#home" class="logo">
+        RokeshSri<span>.</span>
+    </a>
 
 
-        <!-- ================= AI VISUAL ================= -->
+    <nav class="navbar">
 
-        <div class="home-visual reveal">
+        <a href="#home" class="active">Home</a>
 
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
+        <a href="#about">About</a>
 
-            <div class="glow-circle"></div>
+        <a href="#skills">Skills</a>
 
-            <div class="main-icon">
+        <a href="#projects">Projects</a>
 
-                <div class="pulse-ring"></div>
+        <a href="#experience">Experience</a>
 
-                <i class="fa-solid fa-brain"></i>
+        <a href="#achievements">Achievements</a>
 
-            </div>
+        <a href="#education">Education</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
 
 
-            <div class="data-card card-one">
-                <i class="fa-brands fa-python"></i>
-                <span>Python</span>
-            </div>
+    <div class="menu-icon">
 
-            <div class="data-card card-two">
-                <i class="fa-solid fa-chart-line"></i>
-                <span>Data Analytics</span>
-            </div>
+        <i class="fa-solid fa-bars"></i>
 
-            <div class="data-card card-three">
-                <i class="fa-solid fa-robot"></i>
-                <span>AI / ML</span>
-            </div>
+    </div>
 
-            <div class="data-card card-four">
-                <i class="fa-solid fa-database"></i>
-                <span>SQL</span>
-            </div>
+</header>
+
+
+
+<!-- =====================================================
+     HOME
+===================================================== -->
+
+<section class="home section" id="home">
+
+    <div class="home-content reveal">
+
+        <p class="small-text">
+            HELLO, I'M
+        </p>
+
+
+        <h1>
+            ROKESHSRI <span>P</span>
+        </h1>
+
+
+        <!-- Typing Animation -->
+
+        <h2 class="typing-wrapper">
+
+            <span class="typing-text"></span>
+
+            <span class="typing-cursor">|</span>
+
+        </h2>
+
+
+        <p class="home-description">
+
+            Aspiring Data Analyst and Python Enthusiast passionate about
+            transforming data into meaningful insights and building
+            practical AI-powered solutions.
+
+        </p>
+
+
+        <div class="home-buttons">
+
+            <a href="#projects" class="btn">
+
+                View My Projects
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="RokeshSri_Resume.pdf"
+               download
+               class="btn secondary-btn">
+
+                Download Resume
+
+                <i class="fa-solid fa-download"></i>
+
+            </a>
 
         </div>
 
-    </section>
 
+        <!-- Social Links -->
 
-    <!-- ================= STATS ================= -->
+        <div class="social-links">
 
-    <section class="stats-section">
+            <a href="https://github.com/rokeshsri"
+               target="_blank"
+               aria-label="GitHub">
 
-        <div class="stats-container">
-
-            <div class="stat reveal">
-                <h3 class="counter" data-target="9.56">0</h3>
-                <p>CGPA</p>
-            </div>
-
-            <div class="stat reveal">
-                <h3 class="counter" data-target="99">0</h3>
-                <p>HackerRank Problems</p>
-            </div>
-
-            <div class="stat reveal">
-                <h3 class="counter" data-target="95">0</h3>
-                <p>HSC Percentage</p>
-            </div>
-
-            <div class="stat reveal">
-                <h3>AI</h3>
-                <p>Project Focus</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section class="about section" id="about">
-
-        <div class="section-title reveal">
-
-            <p>GET TO KNOW ME</p>
-
-            <h2>
-                About <span>Me</span>
-            </h2>
-
-        </div>
-
-
-        <div class="about-content">
-
-            <div class="about-card reveal">
-
-                <i class="fa-solid fa-user-graduate"></i>
-
-                <h3>AI & Data Science</h3>
-
-                <p>
-                    Final-year B.Tech Artificial Intelligence and Data Science
-                    student at Kangeyam Institute of Technology with a strong
-                    academic background and interest in data-driven technologies.
-                </p>
-
-            </div>
-
-
-            <div class="about-card reveal">
-
-                <i class="fa-solid fa-chart-column"></i>
-
-                <h3>Data & Analytics</h3>
-
-                <p>
-                    Interested in Python, SQL, Power BI, Excel, data analysis,
-                    visualization and machine learning.
-                </p>
-
-            </div>
-
-
-            <div class="about-card reveal">
-
-                <i class="fa-solid fa-lightbulb"></i>
-
-                <h3>Continuous Learning</h3>
-
-                <p>
-                    I enjoy learning new technologies, participating in
-                    technical activities and building practical projects
-                    based on real-world problems.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= SKILLS ================= -->
-
-    <section class="skills section" id="skills">
-
-        <div class="section-title reveal">
-
-            <p>WHAT I WORK WITH</p>
-
-            <h2>
-                My <span>Skills</span>
-            </h2>
-
-        </div>
-
-
-        <div class="skills-container">
-
-            <div class="skill reveal">
-                <i class="fa-brands fa-python"></i>
-                <h3>Python</h3>
-            </div>
-
-            <div class="skill reveal">
-                <i class="fa-solid fa-database"></i>
-                <h3>MySQL</h3>
-            </div>
-
-            <div class="skill reveal">
-                <i class="fa-solid fa-chart-simple"></i>
-                <h3>Power BI</h3>
-            </div>
-
-            <div class="skill reveal">
-                <i class="fa-solid fa-file-excel"></i>
-                <h3>MS Excel</h3>
-            </div>
-
-            <div class="skill reveal">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Machine Learning</h3>
-            </div>
-
-            <div class="skill reveal">
                 <i class="fa-brands fa-github"></i>
-                <h3>GitHub</h3>
-            </div>
 
-            <div class="skill reveal">
-                <i class="fa-solid fa-chart-line"></i>
-                <h3>Data Analytics</h3>
-            </div>
+            </a>
 
-            <div class="skill reveal">
-                <i class="fa-solid fa-code"></i>
-                <h3>DSA Basics</h3>
+
+            <a href="https://www.linkedin.com/in/rokeshsri-palanivel-3284672b8/"
+               target="_blank"
+               aria-label="LinkedIn">
+
+                <i class="fa-brands fa-linkedin"></i>
+
+            </a>
+
+
+            <a href="mailto:rokeshsri94@gmail.com"
+               aria-label="Email">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- HOME AI VISUAL -->
+
+    <div class="home-visual reveal">
+
+        <div class="glow-circle"></div>
+
+        <div class="orbit orbit-one"></div>
+
+        <div class="orbit orbit-two"></div>
+
+
+        <div class="data-card card-one">
+
+            <i class="fa-brands fa-python"></i>
+
+            <span>Python</span>
+
+        </div>
+
+
+        <div class="data-card card-two">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span>Data Analytics</span>
+
+        </div>
+
+
+        <div class="data-card card-three">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <span>Machine Learning</span>
+
+        </div>
+
+
+        <div class="data-card card-four">
+
+            <i class="fa-solid fa-robot"></i>
+
+            <span>Artificial Intelligence</span>
+
+        </div>
+
+
+        <div class="main-icon">
+
+            <i class="fa-solid fa-database"></i>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section class="about section" id="about">
+
+    <div class="section-title reveal">
+
+        <p>GET TO KNOW ME</p>
+
+        <h2>
+            About <span>Me</span>
+        </h2>
+
+    </div>
+
+
+    <div class="about-content">
+
+
+        <div class="about-card reveal">
+
+            <i class="fa-solid fa-user-graduate"></i>
+
+            <h3>
+                AI & Data Science Student
+            </h3>
+
+            <p>
+
+                Final-year B.Tech Artificial Intelligence and Data Science
+                student at Kangeyam Institute of Technology with a strong
+                academic background and an interest in applying
+                data-driven technologies.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="about-card reveal">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <h3>
+                Data & Technology
+            </h3>
+
+            <p>
+
+                Interested in Python, data analysis, Power BI,
+                machine learning, visualization and practical
+                problem solving.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="about-card reveal">
+
+            <i class="fa-solid fa-lightbulb"></i>
+
+            <h3>
+                Continuous Learning
+            </h3>
+
+            <p>
+
+                A quick learner who enjoys developing new skills,
+                participating in technical activities and working
+                on practical projects.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<section class="skills section" id="skills">
+
+    <div class="section-title reveal">
+
+        <p>WHAT I WORK WITH</p>
+
+        <h2>
+            My <span>Skills</span>
+        </h2>
+
+    </div>
+
+
+    <div class="skills-container">
+
+
+        <div class="skill reveal">
+
+            <i class="fa-brands fa-python"></i>
+
+            <h3>Python</h3>
+
+            <div class="skill-line">
+
+                <span style="width: 90%;"></span>
+
             </div>
 
         </div>
 
-    </section>
 
 
-    <!-- ================= PROJECTS ================= -->
+        <div class="skill reveal">
 
-    <section class="projects section" id="projects">
+            <i class="fa-solid fa-database"></i>
 
-        <div class="section-title reveal">
+            <h3>MySQL</h3>
 
-            <p>MY WORK</p>
+            <div class="skill-line">
 
-            <h2>
-                Featured <span>Projects</span>
-            </h2>
+                <span style="width: 80%;"></span>
+
+            </div>
 
         </div>
 
 
-        <div class="project-container">
+
+        <div class="skill reveal">
+
+            <i class="fa-solid fa-chart-simple"></i>
+
+            <h3>Power BI</h3>
+
+            <div class="skill-line">
+
+                <span style="width: 85%;"></span>
+
+            </div>
+
+        </div>
 
 
-            <!-- PROJECT 1 -->
 
-            <div class="project-card reveal tilt-card">
+        <div class="skill reveal">
 
-                <div class="project-icon">
+            <i class="fa-solid fa-table"></i>
+
+            <h3>MS Excel</h3>
+
+            <div class="skill-line">
+
+                <span style="width: 85%;"></span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="skill reveal">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <h3>Machine Learning</h3>
+
+            <div class="skill-line">
+
+                <span style="width: 75%;"></span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="skill reveal">
+
+            <i class="fa-brands fa-github"></i>
+
+            <h3>GitHub</h3>
+
+            <div class="skill-line">
+
+                <span style="width: 80%;"></span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="skill reveal">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <h3>Data Science</h3>
+
+            <div class="skill-line">
+
+                <span style="width: 80%;"></span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="skill reveal">
+
+            <i class="fa-solid fa-code"></i>
+
+            <h3>DSA Basics</h3>
+
+            <div class="skill-line">
+
+                <span style="width: 65%;"></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
+
+<section class="projects section" id="projects">
+
+    <div class="section-title reveal">
+
+        <p>MY WORK</p>
+
+        <h2>
+            Featured <span>Projects</span>
+        </h2>
+
+    </div>
+
+
+
+    <div class="project-container">
+
+
+        <!-- =================================================
+             PROJECT 1
+        ================================================== -->
+
+        <div class="project-card reveal">
+
+            <div class="project-image">
+
+                <img src="images/wine.jpg"
+                     alt="Wine Quality Prediction Project">
+
+                <div class="image-overlay">
 
                     <i class="fa-solid fa-wine-glass"></i>
 
                 </div>
 
-                <div class="project-content">
-
-                    <span class="project-type">
-                        MACHINE LEARNING
-                    </span>
-
-                    <h3>
-                        Wine Quality Prediction
-                    </h3>
-
-                    <p>
-                        Machine learning project that predicts wine quality
-                        using Python with data preprocessing, analysis,
-                        visualization and classification techniques.
-                    </p>
-
-                    <div class="technologies">
-
-                        <span>Python</span>
-                        <span>Pandas</span>
-                        <span>Matplotlib</span>
-                        <span>Random Forest</span>
-
-                    </div>
-
-                    <div class="project-result">
-
-                        <strong>86%</strong>
-
-                        <span>
-                            Model Accuracy
-                        </span>
-
-                    </div>
-
-                    <a href="https://github.com/rokeshsri/Wine-Quality-Prediction/blob/main/Project_7_Wine_Quality_Prediction.ipynb"
-                        target="_blank"
-                        class="project-link">
-
-                        View Project
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                    </a>
-
-                </div>
-
             </div>
 
 
-            <!-- PROJECT 2 -->
+            <div class="project-content">
 
-            <div class="project-card reveal tilt-card">
+                <span class="project-type">
+                    MACHINE LEARNING
+                </span>
 
-                <div class="project-icon">
+                <h3>
+                    Wine Quality Prediction
+                </h3>
+
+                <p>
+
+                    Built a machine learning model to predict wine quality
+                    using Python. Performed data cleaning, analysis,
+                    visualization and model training.
+
+                </p>
+
+
+                <div class="technologies">
+
+                    <span>Python</span>
+
+                    <span>Pandas</span>
+
+                    <span>Matplotlib</span>
+
+                    <span>Random Forest</span>
+
+                </div>
+
+
+                <div class="project-result">
+
+                    <strong>86%</strong>
+
+                    <span>
+                        Model Accuracy
+                    </span>
+
+                </div>
+
+
+                <a href="https://github.com/rokeshsri/Wine-Quality-Prediction/blob/main/Project_7_Wine_Quality_Prediction.ipynb"
+                   target="_blank"
+                   class="project-link">
+
+                    View Project
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PROJECT 2
+        ================================================== -->
+
+        <div class="project-card reveal">
+
+            <div class="project-image">
+
+                <img src="images/coffee.jpg"
+                     alt="Coffee Shop Sales Dashboard">
+
+                <div class="image-overlay">
 
                     <i class="fa-solid fa-mug-hot"></i>
 
                 </div>
 
-                <div class="project-content">
-
-                    <span class="project-type">
-                        DATA ANALYSIS
-                    </span>
-
-                    <h3>
-                        Coffee Shop Sales Dashboard
-                    </h3>
-
-                    <p>
-                        Interactive Power BI dashboard designed to analyse
-                        sales performance, products, revenue trends and
-                        business insights.
-                    </p>
-
-                    <div class="technologies">
-
-                        <span>Power BI</span>
-                        <span>Excel</span>
-                        <span>Data Analysis</span>
-                        <span>Dashboard</span>
-
-                    </div>
-
-                    <a href="https://drive.google.com/file/d/1U-jjmAp8oTjxOTmdbJRA4P9nD9JMg_hk/view?usp=sharing"
-                        target="_blank"
-                        class="project-link">
-
-                        View Dashboard
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                    </a>
-
-                </div>
-
             </div>
 
 
-            <!-- PROJECT 3 -->
+            <div class="project-content">
 
-            <div class="project-card reveal tilt-card">
+                <span class="project-type">
+                    DATA ANALYSIS
+                </span>
 
-                <div class="project-icon">
+                <h3>
+                    Coffee Shop Sales Dashboard
+                </h3>
+
+                <p>
+
+                    Created an interactive Power BI dashboard to analyze
+                    coffee shop sales, product performance, branches,
+                    revenue and profit insights.
+
+                </p>
+
+
+                <div class="technologies">
+
+                    <span>Power BI</span>
+
+                    <span>Data Analysis</span>
+
+                    <span>Dashboard</span>
+
+                </div>
+
+
+                <a href="https://drive.google.com/file/d/1U-jjmAp8oTjxOTmdbJRA4P9nD9JMg_hk/view?usp=sharing"
+                   target="_blank"
+                   class="project-link">
+
+                    View Dashboard
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PROJECT 3
+        ================================================== -->
+
+        <div class="project-card reveal">
+
+            <div class="project-image">
+
+                <img src="images/emergency.jpg"
+                     alt="Emergency Services UI UX Design">
+
+                <div class="image-overlay">
 
                     <i class="fa-solid fa-truck-medical"></i>
 
                 </div>
 
-                <div class="project-content">
-
-                    <span class="project-type">
-                        UI / UX DESIGN
-                    </span>
-
-                    <h3>
-                        Emergency Services UX
-                    </h3>
-
-                    <p>
-                        Designed an emergency service UX concept using
-                        priority-based workflows, clear visual indicators
-                        and user-focused interface design.
-                    </p>
-
-                    <div class="technologies">
-
-                        <span>Figma</span>
-                        <span>UI/UX</span>
-                        <span>Prototype</span>
-                        <span>User Research</span>
-
-                    </div>
-
-                    <a href="https://www.figma.com/design/BBewMSOtl1VK5GWRt6IwAX/EMERGENCY"
-                        target="_blank"
-                        class="project-link">
-
-                        View Design
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                    </a>
-
-                </div>
-
             </div>
 
 
-            <!-- PROJECT 4 : ROADGUARD -->
+            <div class="project-content">
 
-            <div class="project-card reveal tilt-card featured-project">
+                <span class="project-type">
+                    UI / UX DESIGN
+                </span>
 
-                <div class="featured-badge">
-                    FEATURED
+                <h3>
+                    Emergency Services UX
+                </h3>
+
+                <p>
+
+                    Designed a multi-modal emergency services UX concept
+                    with priority-based workflows, emergency levels,
+                    location support and clear visual indicators.
+
+                </p>
+
+
+                <div class="technologies">
+
+                    <span>Figma</span>
+
+                    <span>UI/UX</span>
+
+                    <span>User Research</span>
+
                 </div>
 
-                <div class="project-icon road-icon">
+
+                <a href="https://www.figma.com/design/BBewMSOtl1VK5GWRt6IwAX/EMERGENCY"
+                   target="_blank"
+                   class="project-link">
+
+                    View Design
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PROJECT 4 - ROADGUARD AI
+        ================================================== -->
+
+        <div class="project-card reveal featured-project">
+
+            <div class="project-image">
+
+                <img src="images/roadguard.jpg"
+                     alt="RoadGuard AI">
+
+                <div class="image-overlay">
 
                     <i class="fa-solid fa-road"></i>
 
-                    <div class="scan-line"></div>
-
                 </div>
 
-                <div class="project-content">
 
-                    <span class="project-type">
-                        AI / COMPUTER VISION
-                    </span>
+                <div class="live-badge">
 
-                    <h3>
-                        RoadGuard-AI
-                    </h3>
+                    <span></span>
 
-                    <p>
-                        An AI-powered web application that detects road
-                        damage from images using computer vision and machine
-                        learning. Designed to identify road issues such as
-                        potholes and cracks.
-                    </p>
-
-                    <div class="technologies">
-
-                        <span>Python</span>
-                        <span>PyTorch</span>
-                        <span>YOLO</span>
-                        <span>Computer Vision</span>
-                        <span>Web App</span>
-
-                    </div>
-
-                    <div class="status">
-
-                        <span class="status-dot"></span>
-
-                        Live AI Application
-
-                    </div>
-
-                    <a href="https://roadguard-ai-w98g.onrender.com/"
-                        target="_blank"
-                        class="project-link">
-
-                        Launch RoadGuard-AI
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                    </a>
+                    LIVE AI PROJECT
 
                 </div>
 
             </div>
 
-        </div>
 
-    </section>
+            <div class="project-content">
 
-
-    <!-- ================= EXPERIENCE ================= -->
-
-    <section class="experience section" id="experience">
-
-        <div class="section-title reveal">
-
-            <p>MY JOURNEY</p>
-
-            <h2>
-                Experience
-            </h2>
-
-        </div>
-
-
-        <div class="experience-card reveal">
-
-            <div class="experience-icon">
-
-                <i class="fa-solid fa-briefcase"></i>
-
-            </div>
-
-            <div>
-
-                <span class="date">
-                    INTERNSHIP
+                <span class="project-type">
+                    AI / COMPUTER VISION
                 </span>
 
+
                 <h3>
-                    Data Analysis Intern
+                    RoadGuard-AI
                 </h3>
 
-                <h4>
-                    Qaroo India Private Limited
-                </h4>
 
                 <p>
-                    Gained practical exposure to data analysis and
-                    industry-relevant tools while working on a data
-                    analysis project.
+
+                    An AI-powered web application that detects road damage
+                    from images using computer vision and deep learning.
+                    It helps identify road issues such as potholes,
+                    cracks and other surface damage.
+
                 </p>
 
+
+                <div class="technologies">
+
+                    <span>Python</span>
+
+                    <span>PyTorch</span>
+
+                    <span>YOLO</span>
+
+                    <span>Computer Vision</span>
+
+                    <span>Flask</span>
+
+                </div>
+
+
+                <div class="ai-status">
+
+                    <i class="fa-solid fa-circle-nodes"></i>
+
+                    AI Model Powered
+
+                </div>
+
+
+                <a href="https://roadguard-ai-w98g.onrender.com/"
+                   target="_blank"
+                   class="project-link live-link">
+
+                    Live Demo
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
             </div>
 
         </div>
 
-    </section>
+
+    </div>
+
+</section>
 
 
-    <!-- ================= ACHIEVEMENTS ================= -->
 
-    <section class="achievements section" id="achievements">
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
 
-        <div class="section-title reveal">
+<section class="experience section" id="experience">
 
-            <p>MY MILESTONES</p>
+    <div class="section-title reveal">
 
-            <h2>
-                Achievements & <span>Activities</span>
-            </h2>
+        <p>MY JOURNEY</p>
 
-        </div>
+        <h2>
+            Experience
+        </h2>
 
-
-        <div class="achievement-container">
-
-            <div class="achievement-card reveal">
-                <i class="fa-solid fa-trophy"></i>
-                <h3>First Prize</h3>
-                <p>Essay Writing – Mahatmiyam Day</p>
-            </div>
-
-            <div class="achievement-card reveal">
-                <i class="fa-solid fa-user-tie"></i>
-                <h3>Vice President</h3>
-                <p>AI & Data Science Department – 2025–2026</p>
-            </div>
-
-            <div class="achievement-card reveal">
-                <i class="fa-solid fa-users"></i>
-                <h3>Statathon Coordinator</h3>
-                <p>Student Coordinator – Statathon 2025</p>
-            </div>
-
-            <div class="achievement-card reveal">
-                <i class="fa-solid fa-code"></i>
-                <h3>HackerRank</h3>
-                <p>99 Python problem statements solved</p>
-            </div>
-
-            <div class="achievement-card reveal">
-                <i class="fa-solid fa-lightbulb"></i>
-                <h3>Smart India Hackathon</h3>
-                <p>Participated in SIH 2025</p>
-            </div>
-
-            <div class="achievement-card reveal">
-                <i class="fa-solid fa-medal"></i>
-                <h3>Class Topper</h3>
-                <p>Topper up to the current semester</p>
-            </div>
-
-        </div>
-
-    </section>
+    </div>
 
 
-    <!-- ================= EDUCATION ================= -->
+    <div class="experience-card reveal">
 
-    <section class="education section" id="education">
+        <div class="experience-icon">
 
-        <div class="section-title reveal">
-
-            <p>MY ACADEMIC JOURNEY</p>
-
-            <h2>
-                Education
-            </h2>
+            <i class="fa-solid fa-briefcase"></i>
 
         </div>
 
 
-        <div class="education-card reveal">
+        <div>
 
-            <i class="fa-solid fa-graduation-cap"></i>
+            <span class="date">
+                INTERNSHIP
+            </span>
 
-            <div>
+
+            <h3>
+                Data Analysis Intern
+            </h3>
+
+
+            <h4>
+                Qaroo India Private Limited
+            </h4>
+
+
+            <p>
+
+                Gained practical exposure to data analysis and
+                industry-relevant tools while working on a
+                data analysis project.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ACHIEVEMENTS
+===================================================== -->
+
+<section class="achievements section" id="achievements">
+
+    <div class="section-title reveal">
+
+        <p>MY MILESTONES</p>
+
+        <h2>
+            Achievements & <span>Activities</span>
+        </h2>
+
+    </div>
+
+
+    <div class="achievement-container">
+
+
+        <div class="achievement-card reveal">
+
+            <i class="fa-solid fa-trophy"></i>
+
+            <h3>
+                First Prize
+            </h3>
+
+            <p>
+                Essay Writing – Mahatmiyam Day
+            </p>
+
+        </div>
+
+
+
+        <div class="achievement-card reveal">
+
+            <i class="fa-solid fa-user-tie"></i>
+
+            <h3>
+                Vice President
+            </h3>
+
+            <p>
+                AI & Data Science Department – 2025–2026
+            </p>
+
+        </div>
+
+
+
+        <div class="achievement-card reveal">
+
+            <i class="fa-solid fa-users"></i>
+
+            <h3>
+                Statathon Coordinator
+            </h3>
+
+            <p>
+                Student Coordinator – Statathon 2025
+            </p>
+
+        </div>
+
+
+
+        <div class="achievement-card reveal">
+
+            <i class="fa-solid fa-code"></i>
+
+            <h3>
+                HackerRank
+            </h3>
+
+            <p>
+                99 Python problem statements solved
+            </p>
+
+        </div>
+
+
+
+        <div class="achievement-card reveal">
+
+            <i class="fa-solid fa-lightbulb"></i>
+
+            <h3>
+                Smart India Hackathon
+            </h3>
+
+            <p>
+                Participated in SIH 2025
+            </p>
+
+        </div>
+
+
+
+        <div class="achievement-card reveal">
+
+            <i class="fa-solid fa-medal"></i>
+
+            <h3>
+                Class Topper
+            </h3>
+
+            <p>
+                Topper up to the current semester
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EDUCATION
+===================================================== -->
+
+<section class="education section" id="education">
+
+    <div class="section-title reveal">
+
+        <p>MY ACADEMIC JOURNEY</p>
+
+        <h2>
+            Education
+        </h2>
+
+    </div>
+
+
+    <div class="education-card reveal">
+
+        <i class="fa-solid fa-graduation-cap"></i>
+
+
+        <div>
+
+            <span>
+                2023 – 2027
+            </span>
+
+
+            <h3>
+                B.Tech – Artificial Intelligence & Data Science
+            </h3>
+
+
+            <h4>
+                Kangeyam Institute of Technology
+            </h4>
+
+
+            <p>
+                CGPA: <strong>9.56</strong> up to Semester VI
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="education-card reveal">
+
+        <i class="fa-solid fa-school"></i>
+
+
+        <div>
+
+            <span>
+                2023
+            </span>
+
+
+            <h3>
+                Higher Secondary Certificate (HSC)
+            </h3>
+
+
+            <h4>
+                Atchaya Mandir Higher Secondary School
+            </h4>
+
+
+            <p>
+                State Board | Percentage:
+                <strong>95%</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact section" id="contact">
+
+    <div class="section-title reveal">
+
+        <p>LET'S CONNECT</p>
+
+        <h2>
+            Contact <span>Me</span>
+        </h2>
+
+    </div>
+
+
+    <div class="contact-container reveal">
+
+
+        <div class="contact-info">
+
+            <h3>
+                Have a project or opportunity?
+            </h3>
+
+
+            <p>
+
+                I'm open to internships, learning opportunities
+                and projects related to AI, Data Science and
+                Data Analytics.
+
+            </p>
+
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-envelope"></i>
 
                 <span>
-                    2023 – 2027
+                    rokeshsri94@gmail.com
                 </span>
-
-                <h3>
-                    B.Tech – Artificial Intelligence & Data Science
-                </h3>
-
-                <h4>
-                    Kangeyam Institute of Technology
-                </h4>
-
-                <p>
-                    CGPA:
-                    <strong>9.56</strong>
-                    up to Semester VI
-                </p>
 
             </div>
 
-        </div>
 
+            <div class="contact-item">
 
-        <div class="education-card reveal">
-
-            <i class="fa-solid fa-school"></i>
-
-            <div>
+                <i class="fa-solid fa-location-dot"></i>
 
                 <span>
-                    2023
+                    Cuddalore, Tamil Nadu
                 </span>
 
-                <h3>
-                    Higher Secondary Certificate (HSC)
-                </h3>
-
-                <h4>
-                    Atchaya Mandir Higher Secondary School
-                </h4>
-
-                <p>
-                    State Board |
-                    Percentage:
-                    <strong>95%</strong>
-                </p>
-
             </div>
 
         </div>
 
-    </section>
 
 
-    <!-- ================= CONTACT ================= -->
-
-    <section class="contact section" id="contact">
-
-        <div class="section-title reveal">
-
-            <p>LET'S CONNECT</p>
-
-            <h2>
-                Contact <span>Me</span>
-            </h2>
-
-        </div>
+        <div class="contact-buttons">
 
 
-        <div class="contact-container reveal">
+            <a href="https://github.com/rokeshsri"
+               target="_blank"
+               class="contact-btn">
 
-            <div class="contact-info">
+                <i class="fa-brands fa-github"></i>
 
-                <h3>
-                    Have a project or opportunity?
-                </h3>
+                GitHub
 
-                <p>
-                    I'm open to internships, learning opportunities and
-                    projects related to AI, Data Science and Data Analytics.
-                </p>
+            </a>
 
 
-                <div class="contact-item">
 
-                    <i class="fa-solid fa-envelope"></i>
+            <a href="https://www.linkedin.com/in/rokeshsri-palanivel-3284672b8/"
+               target="_blank"
+               class="contact-btn">
 
-                    <span>
-                        rokeshsri94@gmail.com
-                    </span>
+                <i class="fa-brands fa-linkedin"></i>
 
-                </div>
+                LinkedIn
 
-
-                <div class="contact-item">
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    <span>
-                        Cuddalore, Tamil Nadu
-                    </span>
-
-                </div>
-
-            </div>
+            </a>
 
 
-            <div class="contact-buttons">
 
-                <a href="https://github.com/rokeshsri"
-                    target="_blank"
-                    class="contact-btn">
+            <a href="mailto:rokeshsri94@gmail.com"
+               class="contact-btn">
 
-                    <i class="fa-brands fa-github"></i>
+                <i class="fa-solid fa-envelope"></i>
 
-                    GitHub
+                Email Me
 
-                </a>
-
-
-                <a href="https://www.linkedin.com/in/rokeshsri-palanivel-3284672b8/"
-                    target="_blank"
-                    class="contact-btn">
-
-                    <i class="fa-brands fa-linkedin"></i>
-
-                    LinkedIn
-
-                </a>
-
-
-                <a href="mailto:rokeshsri94@gmail.com"
-                    class="contact-btn">
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    Email Me
-
-                </a>
-
-            </div>
+            </a>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= FOOTER ================= -->
 
-    <footer>
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
-        <p>
-            © 2026 <strong>RokeshSri P</strong>.
-            Built with curiosity & AI.
-        </p>
+<footer>
 
-        <a href="#home">
+    <p>
 
-            <i class="fa-solid fa-arrow-up"></i>
+        © 2026
+        <strong>RokeshSri P</strong>.
+        All Rights Reserved.
 
-        </a>
-
-    </footer>
+    </p>
 
 
-    <script src="script.js"></script>
+    <a href="#home">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </a>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
 
 </body>
 
